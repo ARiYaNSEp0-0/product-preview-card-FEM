@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Product preview card FEM challenge" />
+    <!-- Preloading fonts for better user experience -->
     <link
       href="./fonts/Fraunces/Fraunces-Bold.ttf"
       type="font/ttf"
@@ -34,5 +35,60 @@
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="stylesheet" href="./css/input.css" />
   </head>
-  <body></body>
+  <body
+    class="text-dark-grayish-blue bg-cream grid min-h-screen place-content-center px-4 py-3 text-sm leading-relaxed"
+  >
+    <main>
+      <article
+        class="max-w-[640px] rounded-lg bg-white *:flex-1 md:flex md:flex-wrap"
+      >
+        <picture>
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 48em)"
+            width="600"
+            height="900"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Chanel perfume bottle elegantly placed on a vibrant green leaf, showcasing nature's beauty and luxury in harmony."
+            width="686"
+            height="480"
+            class="rounded-t-lg md:rounded-none md:rounded-l-lg"
+          />
+        </picture>
+        <div class="px-6 pb-6 pt-5">
+          <span
+            class="text-dark-grayish-blue text-xs uppercase tracking-[.3rem]"
+            >Perfume</span
+          >
+          <h1
+            class="text-very-dark-blue mt-2 font-serif text-[32px] font-bold leading-none"
+          >
+            <strong>Gabrielle Essence Eau De Parfum</strong>
+          </h1>
+          <p class="mt-4">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="mt-4 flex items-center gap-5">
+            <strong class="text-dark-cyan font-serif text-[32px] font-bold"
+              ><ins class="no-underline">$149.99</ins></strong
+            ><del class="text-xs">$169.99</del>
+          </p>
+          <button
+            class="bg-dark-cyan focus:ring-very-dark-blue mt-2 flex w-full items-center justify-center gap-3 rounded-lg py-3 font-bold text-white focus:outline-none focus:ring-4"
+          >
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF"
+              />
+            </svg>
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Declaring custom font families */ 
 @layer base {
   @font-face {
     font-family: "Fraunces";
